@@ -1,0 +1,79 @@
+body {
+    font-family: "Roboto", sans-serif;
+    margin: 0;
+  }
+  .sky:hover {
+    background: rgb(78, 130, 243);
+  }
+  .sky:hover .moon-pic {
+    transform: translate(-200%, 400px);
+  }
+  .sky:hover .sun-pic {
+    transform: translate(60%, -40%);
+  }
+  .landing-page {
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.7s ease-in-out;
+  }
+  .sky {
+    height: 100vh;
+    background: rgb(47, 47, 80);
+    transition: all 0.7s ease-in-out;
+    cursor: pointer;
+  }
+  .text-section {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: rgb(47, 47, 80);
+    position: absolute;
+    bottom: 0;
+    height: 50vh;
+    width: 100%;
+    background: rgb(235, 235, 235);
+  }
+  .profile-pic {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    background: rgb(235, 235, 235);
+    position: absolute;
+    top: -20%;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 3px solid rgb(47, 47, 80);
+    overflow: hidden;
+  }
+  .profile-pic:hover .sky {
+    background: yellow;
+  }
+  .moon-pic {
+    width: 150px;
+    height: 150px;
+    background: transparent;
+    position: absolute;
+    top: 10%;
+    left: 30%;
+    transition: all 0.8s ease-in-out;
+  }
+  .sun-pic {
+    width: 150px;
+    height: 150px;
+    background: transparent;
+    position: absolute;
+    top: 10%;
+    right: 30%;
+    transition: all 0.8s ease-in-out;
+    transform: translate(200%, 400px);
+  }
+  .balance-pic {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
